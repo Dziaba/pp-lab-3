@@ -6,8 +6,8 @@ public class Main {
 
        Rectangle rectangle = new Rectangle(4.0, 5.0);
 
-       System.out.println("Długość: " + rectangle.calculateArea() + "\n");
-       System.out.println("Szerokość: " + rectangle.calculatePerimeter() + "\n");
+       System.out.println("Pole: " + rectangle.calculateArea() + "\n");
+       System.out.println("Obwod: " + rectangle.calculatePerimeter() + "\n");
        
     }
 }
