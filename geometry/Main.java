@@ -9,14 +9,15 @@ public class Main {
 
         System.out.println("Współrzędne punktu: " + point.getX() + ", " + point.getY() + "\n");
 
-        Point center = new Point (3.0, 4.0);
+        Point center = new Point (7.0, 2.0);
 
-        Circle circle = new Circle(center, 5.0); 
+        ColoredCircle coloredCircle = new ColoredCircle(center, 5.0,"yellow");
 
-        System.out.println("Współrzędne środka koła: (" + circle.getCenter().getX() +", " + circle.getCenter().getY() + ") \n");
-        System.out.println("Promień koła: " + circle.getRadius() + "\n");
-        System.out.println("Obwód koła: " + circle.calculatePerimeter() + "\n");
-        System.out.println("Pole powierzchni koła: " + circle.getArea() + "\n");
-
+        System.out.println("Współrzędne środka koła: (" + coloredCircle.getCenter().getX() +", " + coloredCircle.getCenter().getY() + ") \n");
+        System.out.println("Promień koła: " + coloredCircle.getRadius() + "\n");
+        System.out.println("Obwód koła: " + coloredCircle.calculatePerimeter() + "\n");
+        System.out.println("Pole powierzchni koła: " + coloredCircle.getArea() + "\n");
+        
+        System.out.println("Kolor koła: " + coloredCircle.getColor());
     }
 }
